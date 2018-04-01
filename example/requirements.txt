@@ -2,3 +2,4 @@ supervisor ; python_version < '3.0'
 docker-py
 requests
 buildbot_pkg
+service_identity
