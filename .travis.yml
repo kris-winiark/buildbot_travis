@@ -1,9 +1,9 @@
 language: python
 sudo: false
 
-#env:
-#   global:
-#      - image=pythonnode_slave
+env:
+   global:
+      - image=pythonnode_slave
 
 matrix:
   exclude:
