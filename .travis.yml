@@ -1,18 +1,24 @@
 language: python
 sudo: false
 
-env:
-   global:
-      - image=pythonnode_slave
+#env:
+#   global:
+#      - image=pythonnode_slave
 
 matrix:
+  exclude:
+    - python:python2.6
   include:
+    - python: 3.6
+
+#matrix:
+  #include:
     #- python: 2.7
     #  env: TRAVIS_NODE_VERSION="4"
     #- python: 2.7
     #  env: TRAVIS_NODE_VERSION="6"
-    - python: 3.5
-      # env: TRAVIS_NODE_VERSION="6"
+    #- python: 3.5
+    # env: TRAVIS_NODE_VERSION="6"
     #- python: 3.6
     #  env: TRAVIS_NODE_VERSION="6"
 
