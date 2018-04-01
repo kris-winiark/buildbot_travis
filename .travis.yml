@@ -7,7 +7,7 @@ env:
 
 matrix:
   exclude:
-    - python:python2.6
+    - python: python2.6
   include:
     - python: 3.6
 
